@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SliderPro</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+        }
+
+        #container{
+            width: 100vh;
+            height: 450px;
+            overflow: hidden;
+        }
+
+        .slider{
+            position: relative;
+            transition: 500ms;
+            /* width: calc(100%*5); */
+            height: 450px;
+            display: flex;
+            justify-content: start;
+            flex-wrap: nowrap;
+        }
+
+        .slide{
+            width: 100%;
+            height: 450px;
+        }
+
+        .slide img{
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            object-position: 0;
+        }
+
+        #vieSlider{
+            /* width: calc(30px * 5); */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .dieSlider{
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="slider">
+            <div class="slide"><img src="/img/icon profile 4 .jpg" alt=""></div>
+            <div class="slide"><img src="/img/icon profile 3.jpg" alt=""></div>
+            <div class="slide"><img src="/img/icon profile 2.jpg" alt=""></div>
+            <div class="slide"><img src="/img/icon profile .jpg" alt=""></div>
+            <div class="slide"><img src="/img/Cover facebook.jpg" alt=""></div>
+            <div class="slide"><img src="/img/icon profile 3.jpg" alt=""></div>
+            <div class="slide"><img src="/img/icon profile 2.jpg" alt=""></div>
+            <div class="slide"><img src="/img/icon profile 3.jpg" alt=""></div>
+            <div class="slide"><img src="/img/icon profile 2.jpg" alt=""></div>
+        </div>
+    </div>
+    <div id="vieSlider">
+        <!-- <div class="dieSlider">1</div>
+        <div class="dieSlider">2</div>
+        <div class="dieSlider">3</div>
+        <div class="dieSlider">4</div>
+        <div class="dieSlider">5</div>
+        <div class="dieSlider">6</div>
+        <div class="dieSlider">7</div>
+        <div class="dieSlider">8</div>
+        <div class="dieSlider">9</div> -->
+    </div>
+    <button class="btnRigth" id="next">btnRight</button>
+    <button class="btnLeft" id="prev">btnLeft</button>
+    <script src="index.js"></script>
+</body>
+</html>
